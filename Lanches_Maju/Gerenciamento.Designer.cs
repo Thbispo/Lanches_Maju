@@ -35,13 +35,14 @@
             this.buttonEditarCliente = new System.Windows.Forms.Button();
             this.buttonCadProdutos = new System.Windows.Forms.Button();
             this.buttonEditarProduto = new System.Windows.Forms.Button();
+            this.buttonFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(28, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -53,7 +54,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Bisque;
             this.label1.Font = new System.Drawing.Font("Niagara Solid", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Location = new System.Drawing.Point(339, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(293, 68);
@@ -93,7 +94,7 @@
             this.buttonCadProdutos.Name = "buttonCadProdutos";
             this.buttonCadProdutos.Size = new System.Drawing.Size(162, 54);
             this.buttonCadProdutos.TabIndex = 4;
-            this.buttonCadProdutos.Text = "Cadatrar Produtos";
+            this.buttonCadProdutos.Text = "Cadastrar Produtos";
             this.buttonCadProdutos.UseVisualStyleBackColor = false;
             this.buttonCadProdutos.Click += new System.EventHandler(this.buttonCadProdutos_Click);
             // 
@@ -107,6 +108,19 @@
             this.buttonEditarProduto.TabIndex = 5;
             this.buttonEditarProduto.Text = "Editar Produtos";
             this.buttonEditarProduto.UseVisualStyleBackColor = false;
+            this.buttonEditarProduto.Click += new System.EventHandler(this.buttonEditarProduto_Click);
+            // 
+            // buttonFechar
+            // 
+            this.buttonFechar.BackColor = System.Drawing.Color.Maroon;
+            this.buttonFechar.ForeColor = System.Drawing.Color.White;
+            this.buttonFechar.Location = new System.Drawing.Point(672, 409);
+            this.buttonFechar.Name = "buttonFechar";
+            this.buttonFechar.Size = new System.Drawing.Size(116, 38);
+            this.buttonFechar.TabIndex = 6;
+            this.buttonFechar.Text = "Fechar";
+            this.buttonFechar.UseVisualStyleBackColor = false;
+            this.buttonFechar.Click += new System.EventHandler(this.buttonFechar_Click);
             // 
             // Gerenciamento
             // 
@@ -114,6 +128,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonFechar);
             this.Controls.Add(this.buttonEditarProduto);
             this.Controls.Add(this.buttonCadProdutos);
             this.Controls.Add(this.buttonEditarCliente);
@@ -137,5 +152,6 @@
         private System.Windows.Forms.Button buttonEditarCliente;
         private System.Windows.Forms.Button buttonCadProdutos;
         private System.Windows.Forms.Button buttonEditarProduto;
+        private System.Windows.Forms.Button buttonFechar;
     }
 }

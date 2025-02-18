@@ -32,7 +32,19 @@ namespace Lanches_Maju
 
         private void buttonEditarCliente_Click(object sender, EventArgs e)
         {
-            Ed
+            GerenciamentoCli form = new GerenciamentoCli();
+            form.ShowDialog();
+        }
+
+        private void buttonFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonEditarProduto_Click(object sender, EventArgs e)
+        {
+            GerenciamentoPro form = new GerenciamentoPro();
+            form.ShowDialog();
         }
     }
 }

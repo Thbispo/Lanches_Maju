@@ -47,6 +47,8 @@
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.buttonLimparCampos = new System.Windows.Forms.Button();
             this.buttonFechar = new System.Windows.Forms.Button();
+            this.textBoxSenha = new System.Windows.Forms.TextBox();
+            this.labelSenha = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -222,6 +224,7 @@
             this.buttonCadastrar.TabIndex = 37;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = false;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // buttonLimparCampos
             // 
@@ -249,12 +252,36 @@
             this.buttonFechar.UseVisualStyleBackColor = false;
             this.buttonFechar.Click += new System.EventHandler(this.buttonFechar_Click);
             // 
+            // textBoxSenha
+            // 
+            this.textBoxSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSenha.Location = new System.Drawing.Point(507, 162);
+            this.textBoxSenha.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.Size = new System.Drawing.Size(281, 26);
+            this.textBoxSenha.TabIndex = 40;
+           
+            // 
+            // labelSenha
+            // 
+            this.labelSenha.AutoSize = true;
+            this.labelSenha.Font = new System.Drawing.Font("Niagara Solid", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSenha.ForeColor = System.Drawing.Color.Maroon;
+            this.labelSenha.Location = new System.Drawing.Point(506, 137);
+            this.labelSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSenha.Name = "labelSenha";
+            this.labelSenha.Size = new System.Drawing.Size(42, 23);
+            this.labelSenha.TabIndex = 41;
+            this.labelSenha.Text = "Senha";
+            // 
             // CadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelSenha);
+            this.Controls.Add(this.textBoxSenha);
             this.Controls.Add(this.buttonFechar);
             this.Controls.Add(this.buttonLimparCampos);
             this.Controls.Add(this.buttonCadastrar);
@@ -302,5 +329,7 @@
         private System.Windows.Forms.Button buttonCadastrar;
         private System.Windows.Forms.Button buttonLimparCampos;
         private System.Windows.Forms.Button buttonFechar;
+        private System.Windows.Forms.TextBox textBoxSenha;
+        private System.Windows.Forms.Label labelSenha;
     }
 }

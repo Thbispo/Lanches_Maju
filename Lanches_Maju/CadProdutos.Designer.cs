@@ -37,8 +37,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonCadastrarPro = new System.Windows.Forms.Button();
+            this.buttonLimpar = new System.Windows.Forms.Button();
             this.buttonFechar = new System.Windows.Forms.Button();
             this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
             this.maskedTextBoxValor = new System.Windows.Forms.MaskedTextBox();
@@ -127,30 +127,31 @@
             this.label5.TabIndex = 30;
             this.label5.Text = "Categoria";
             // 
-            // button1
+            // buttonCadastrarPro
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
-            this.button1.Font = new System.Drawing.Font("Niagara Solid", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(356, 403);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 35);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonCadastrarPro.BackColor = System.Drawing.Color.Maroon;
+            this.buttonCadastrarPro.Font = new System.Drawing.Font("Niagara Solid", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCadastrarPro.ForeColor = System.Drawing.Color.White;
+            this.buttonCadastrarPro.Location = new System.Drawing.Point(356, 403);
+            this.buttonCadastrarPro.Name = "buttonCadastrarPro";
+            this.buttonCadastrarPro.Size = new System.Drawing.Size(140, 35);
+            this.buttonCadastrarPro.TabIndex = 31;
+            this.buttonCadastrarPro.Text = "Cadastrar";
+            this.buttonCadastrarPro.UseVisualStyleBackColor = false;
+            this.buttonCadastrarPro.Click += new System.EventHandler(this.buttonCadastrarPro_Click);
             // 
-            // button2
+            // buttonLimpar
             // 
-            this.button2.BackColor = System.Drawing.Color.Maroon;
-            this.button2.Font = new System.Drawing.Font("Niagara Solid", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(502, 403);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 35);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "Limpar Campos";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonLimpar.BackColor = System.Drawing.Color.Maroon;
+            this.buttonLimpar.Font = new System.Drawing.Font("Niagara Solid", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLimpar.ForeColor = System.Drawing.Color.White;
+            this.buttonLimpar.Location = new System.Drawing.Point(502, 403);
+            this.buttonLimpar.Name = "buttonLimpar";
+            this.buttonLimpar.Size = new System.Drawing.Size(140, 35);
+            this.buttonLimpar.TabIndex = 32;
+            this.buttonLimpar.Text = "Limpar Campos";
+            this.buttonLimpar.UseVisualStyleBackColor = false;
+            this.buttonLimpar.Click += new System.EventHandler(this.button2_Click);
             // 
             // buttonFechar
             // 
@@ -195,8 +196,8 @@
             this.Controls.Add(this.maskedTextBoxValor);
             this.Controls.Add(this.comboBoxCategoria);
             this.Controls.Add(this.buttonFechar);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonLimpar);
+            this.Controls.Add(this.buttonCadastrarPro);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.richTextBoxDescricao);
             this.Controls.Add(this.label4);
@@ -223,8 +224,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox richTextBoxDescricao;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonCadastrarPro;
+        private System.Windows.Forms.Button buttonLimpar;
         private System.Windows.Forms.Button buttonFechar;
         private System.Windows.Forms.ComboBox comboBoxCategoria;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxValor;
