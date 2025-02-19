@@ -90,6 +90,11 @@ namespace Lanches_Maju
                 }
             }
         }
+
+        private void button_fechar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
        
 }

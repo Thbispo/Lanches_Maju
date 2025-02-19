@@ -48,6 +48,7 @@
             this.button_fechar.TabIndex = 20;
             this.button_fechar.Text = "Fechar";
             this.button_fechar.UseVisualStyleBackColor = false;
+            this.button_fechar.Click += new System.EventHandler(this.button_fechar_Click_1);
             // 
             // button_removerCliente
             // 
